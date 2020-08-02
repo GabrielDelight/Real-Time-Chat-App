@@ -4,6 +4,8 @@ const http = require('http');
 const socketio = require('socket.io');
 const hbs = require('hbs')
 
+const port = process.env.PORT || 3000
+
 const app = express();
 app.use(express.static(path.join(__dirname, '/public')))
 
@@ -60,7 +62,7 @@ io.on('connection', (socket) => {
 
 })
 
-server.listen(3000, () => {
+server.listen(port, () => {
     console.log("Server is up and running")
 })
 
