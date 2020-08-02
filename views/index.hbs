@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav></nav>
+    </header>
+
+    {{!-- Login --}}
+    <div class="customise_background">
+        <div class="register_box">
+            <div class="reg_wrapper">
+                <input type="text" id="username" placeholder="User name">
+                <!-- <input type="text" placeholder="Enter a secret key"> -->
+                <br>
+                <button id="joinBtn" onclick="runGreetFun()">Join chat</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <aside>
+            <div class="sowMyName">
+                <button id="close">Close</button>
+                <div class="myname_large">
+                    <h1>D</h1> <span>chat</span>
+                </div>
+                <h4>Active users</h4>
+            <div class="active_container">
+            <div id="showActiveUsers"></div>
+
+            </div>
+            {{!-- <div class="person">
+                <div class="name">
+                    <h3>Jone Doe</h3>
+                    <p>Joined the Group</p>
+                </div>
+            </div> --}}
+
+            </div>
+        </aside>
+        <article>
+            <div class="chat_container">
+                <div class="chat_body">
+                    <div class="sub_wrapper">
+                        <div id="appedChat"></div>
+                        {{!-- <div class="message_box">
+                            <div class="image_user">
+                                <h4>P</h4>
+                            </div>
+                            <div class="chat_discription">
+                                <div class="name_date">
+                                <h4>name</h4>
+                                <h6>10:12 am</h6>
+                                </div>
+                                <p>message</p>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+
+
+
+                <div class="chat_send">
+                    <div class="chat_wrapper .toggle_style">
+                        <div class="icons_attched">
+                            <i class="fa fa-file-image-o"></i>
+                        </div>
+
+                        <div id="emojiBtn" class="emoji_icon">
+                            <i class="fa fa-smile-o"></i>
+                        </div>
+
+                        <div class="input_container">
+                            <input type="text" name="" id="myChat" placeholder="Send a message...">
+                        </div>
+
+                        <div class="left_icons">
+                            <i class="fa fa-microphone"></i>
+                        </div>
+
+                        <div class="send_icon">
+                            <i id="sendBtn" class="fa fa-send"></i>
+                        </div>
+
+
+
+                        <div class="toggle_style">
+                            <div class="stickers_container ">
+                                <div class="sticker">
+                                    <span>😂</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😁</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😂</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😃</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😄</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😅</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😆</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😗</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😘</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😍</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😎</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😋</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😊</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😉</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😙</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😚</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🙂</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🤗</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😇</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🤔</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😐</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😑</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😶</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🙄</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😏</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😣</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😥</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😌</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😜</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🤓</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😮</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🤐</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😛</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😯</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😪</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😫</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😴</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😝</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>🤒</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😦</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😩</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😨</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😰</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😱</span>
+                                </div>
+                                <div class="sticker">
+                                    <span>😳</span>
+                                </div>
+                                  <div class="sticker">
+                                    <span>😵</span>
+                                </div>
+                                  <div class="sticker">
+                                    <span>😡</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="show">OPEN ACTIVE USERS</button>
+        </article>
+
+
+
+        <div class="sideContent">
+            
+        </div>
+
+    </main>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/app.js"></script>
+
+</html>
